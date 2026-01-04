@@ -1,10 +1,26 @@
 # Changelog
 A roadmap to track the progress of **Resumind — AI Resume Analyzer** app.
 
-[//]: # (## v0.2.0 - ...)
+[//]: # (## v0.3.0 - ...)
 [//]: # (**Release Date**: January 4, 2026)
 
 [//]: # (---)
+
+## v0.2.0 - Homepage, Navbar & Resume Card
+**Release Date**: January 4, 2026
+
+- Replaced default Vite boilerplate homepage with a custom landing page layout
+- Updated route metadata to reflect application branding and description
+- Implemented a reusable Navbar component with primary navigation
+- Designed and rendered a dynamic homepage hero section
+- Created mock resume data to simulate backend and AI-generated responses
+- Defined global TypeScript interfaces for resumes and AI feedback structures
+- Built reusable ResumeCard components to display resume previews and scores
+- Implemented an SVG-based ScoreCircle component to visualize resume ratings
+- Dynamically rendered resume cards using conditional rendering and mapping
+- Established a scalable frontend structure in preparation for backend and AI integration
+
+---
 
 ## v0.1.0 - Project Setup  
 **Release Date**: January 3, 2026
