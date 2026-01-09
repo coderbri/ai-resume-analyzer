@@ -1,10 +1,29 @@
 # Changelog
 A roadmap to track the progress of **Resumind — AI Resume Analyzer** app.
 
-[//]: # (## v0.3.0 - ...)
-[//]: # (**Release Date**: January 4, 2026)
+<!-- ## v0.3.1 - ...
+**Release Date**: January 8, 2026
 
-[//]: # (---)
+- Created authentication route (/auth) with login and logout functionality
+- Updated routes configuration to include authentication page
+
+--- -->
+
+## v0.3.0 - Authentication & Puter.js Backend Integration
+**Release Date**: January 8, 2026
+
+- Integrated Puter.js SDK as serverless backend platform for authentication, storage, and AI services
+- Added Puter.js script to root layout for global API access throughout the application
+- Created Zustand store wrapper (app/lib/puter.ts) to abstract Puter.js API interactions
+- Implemented authentication state management with sign in, sign out, and user data tracking
+- Wrapped Puter.js file system operations for resume storage (upload, read, write, delete, list)
+- Integrated Puter.js AI services for chat, image-to-text, and file-based feedback functionality
+- Added key-value storage operations for application data persistence
+- Defined comprehensive TypeScript type declarations (types/puter.d.ts) for Puter.js interfaces
+- Extended Window interface with Puter.js API structure for type safety
+- Established backend foundation enabling resume storage and AI-powered analysis
+
+---
 
 ## v0.2.0 - Homepage, Navbar & Resume Card
 **Release Date**: January 4, 2026
