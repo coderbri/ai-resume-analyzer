@@ -1,15 +1,28 @@
 # Changelog
 A roadmap to track the progress of **Resumind — AI Resume Analyzer** app.
 
-<!-- ## v0.3.1 - ...
-**Release Date**: January 8, 2026
-
-- Created authentication route (/auth) with login and logout functionality
-- Updated routes configuration to include authentication page
+<!-- ## v0.4 - ...
+**Release Date**: January 9, 2026
 
 --- -->
 
-## v0.3.0 - Authentication & Puter.js Backend Integration
+## v0.3.1 - Authentication & Puter.js Backend Integration (Frontend)
+
+**Release Date**: January 9, 2026
+
+Defined dedicated authentication route (`/auth`) in `app/routes.ts` pointing to `routes/auth.tsx`
+- Implemented `Auth` page backed by `usePuterStore` to surface Puter authentication state (`isLoading`, `auth`)
+- Added conditional UI that:
+  - Shows a pulsing “Signing you in…” state while authentication checks are running
+  - Swaps between **Log In** and **Log Out** based on `auth.isAuthenticated`
+- Implemented redirect flow using `useLocation`, `useNavigate`, and a `next` query parameter so users are returned to their intended route after logging in
+- Protected the home route by redirecting unauthenticated users to `/auth?next=/` using `useEffect` in `home.tsx`
+- Fixed the loading-state bug by calling `init()` from `usePuterStore` in `root.tsx` on app load, ensuring Puter is initialized and `isLoading` resolves correctly
+- Completed end‑to‑end frontend authentication flow so Puter login/logout and protected routes now work seamlessly
+
+---
+
+## v0.3.0 - Authentication & Puter.js Backend Integration (Backend)
 **Release Date**: January 8, 2026
 
 - Integrated Puter.js SDK as serverless backend platform for authentication, storage, and AI services
