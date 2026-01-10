@@ -7,7 +7,7 @@ A roadmap to track the progress of **Resumind — AI Resume Analyzer** app.
 --- -->
 
 ## v0.5.0 - PDF-Image Conversion & AI Feedback
-**Release Date**: January 9, 2026
+**Release Date**: January 10, 2026
 
 - Implemented end-to-end resume analysis workflow in `Upload` page with `handleAnalyze` function processing form submissions
 - Added comprehensive error handling with status messages for each processing stage (file upload, PDF conversion, image upload, AI analysis)
@@ -19,7 +19,6 @@ A roadmap to track the progress of **Resumind — AI Resume Analyzer** app.
 - Defined `AIResponseFormat` constant specifying structured feedback format with scores and tips for ATS, tone/style, content, structure, and skills categories
 - Implemented UUID generation using `generateUUID` utility to create unique identifiers for each resume analysis session
 - Added navigation flow redirecting users to `/resume/${uuid}` route upon successful analysis completion
-
 
 ---
 
