@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
 /**
 * Formats a file size in bytes to a human-readable string (KB, MB, GB)
  * @param bytes - The size in bytes
- * @returns A formatted string with the appropiate unit
+ * @returns A formatted string with the appropriate unit
 */
 export function formatSize(bytes: number): string {
     if (bytes === 0) return '0 Bytes';

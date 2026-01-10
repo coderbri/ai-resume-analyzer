@@ -1,11 +1,27 @@
 # Changelog
 A roadmap to track the progress of **Resumind — AI Resume Analyzer** app.
 
-<!-- ## v0.5.0 - ...
+<!-- ## v0.6.0 - ...
 **Release Date**: January 10, 2026
 
-- the form is working, now we're going to take in all of that data in as well as the file to upload to puter stroage and utilize puter's ai services to generate a resume review and ai feedback.
 --- -->
+
+## v0.5.0 - PDF-Image Conversion & AI Feedback
+**Release Date**: January 9, 2026
+
+- Implemented end-to-end resume analysis workflow in `Upload` page with `handleAnalyze` function processing form submissions
+- Added comprehensive error handling with status messages for each processing stage (file upload, PDF conversion, image upload, AI analysis)
+- Integrated PDF-to-image conversion using `convertPdfToImage` utility to transform uploaded PDFs into PNG images for AI processing
+- Implemented file upload to Puter Storage for both original PDF files and converted image files
+- Created data persistence layer using Puter key-value store to save resume metadata, file paths, and AI feedback with UUID-based keys
+- Integrated AI feedback generation using Puter's AI service with Claude Sonnet 4 model for resume analysis
+- Created `prepareInstructions` function in `constants/index.ts` that generates contextual AI prompts incorporating job title and job description
+- Defined `AIResponseFormat` constant specifying structured feedback format with scores and tips for ATS, tone/style, content, structure, and skills categories
+- Implemented UUID generation using `generateUUID` utility to create unique identifiers for each resume analysis session
+- Added navigation flow redirecting users to `/resume/${uuid}` route upon successful analysis completion
+
+
+---
 
 ## v0.4.0 - Upload Form & File Uploader Component
 **Release Date**: January 9, 2026
